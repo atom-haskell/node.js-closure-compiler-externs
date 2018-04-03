@@ -651,3 +651,16 @@ fs.FSWatcher = function() {};
 /**
  */
 fs.FSWatcher.prototype.close = function() {};
+
+/**
+ * @param {number} fd
+ * @param {number|function(...)=} len
+ * @param {function(...)=} callback
+ */
+fs.ftruncate = function(fd, len, callback) {};
+
+/**
+ * @param {number} fd
+ * @param {number=} len
+ */
+fs.ftruncateSync = function(fd, len) {};
